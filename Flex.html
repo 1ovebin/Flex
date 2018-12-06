@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flex</title>
+  <style>
+    /* ResetCss */
+    html, body {width: auto;height: 100%; padding: 0; margin: 0; font-family:"Arial","Microsoft YaHei",sans-serif; text-align:justify;}
+    ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+    body{font-size:.2rem;line-height:1;}
+    img{border:none;vertical-align: middle;}
+    li{list-style:none;}
+    input,select,textarea{outline:none;border:none; background:none;}
+    textarea{resize:none;}
+    a{text-decoration:none; color:#4E4E4E;}
+
+    .num_list{
+      width: 750px;
+      margin: 50px auto 0;
+      display: flex;
+      /* flex-direction: row; */
+      /* flex-wrap: wrap; */
+      flex-flow: row wrap;
+    }
+    .num_list li{
+      width: 200px;
+      height: 200px;
+      line-height: 200px;
+      background: #E88024;
+      list-style: none;
+      border-radius: 50%;
+      font-size: 30px;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+      margin-right: 75px;
+      margin-bottom: 30px;
+    }
+    .num_list li:nth-child(3n){margin-right: 0;}
+
+    /* num2_list */
+    .num2_list{
+      width: 600px;
+      height: 150px;
+      background: #89479B;
+      margin: 50px auto 0;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .num2_list li{
+      width: 100px;
+      height: 100px;
+      line-height: 100px;
+      background: #E88024;
+      list-style: none;
+      margin: 0;
+      font-size: 30px;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+      margin-right: 10px;
+    }
+    .num2_list li:nth-child(4){margin-right: 0;order: -1;}
+    .num2_list li:nth-child(1){order: 5}
+  </style>
+</head>
+<body>
+  <ul class="num_list">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+  </ul>
+  <!--  -->
+  <ul class="num2_list">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+  </ul> 
+</body>
+</html>
